@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0a3d91, #0958dd);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+            padding: 0 20px;
+        }
+        .glass-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: floating 3s infinite ease-in-out;
+        }
+        h1, p {
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            animation: fadeIn 3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes floating {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-container">
+        <h1>🚀 Coming Soon</h1>
+        <p>We are working hard to bring you something amazing. Stay tuned!</p>
+    </div>
+</body>
+</html>
